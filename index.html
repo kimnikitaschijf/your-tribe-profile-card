@@ -5,56 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDND Visitekaartje</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  
+ 
   <body>
-    
-    <article>
+    <div class="flip-card-3D-wrapper">
+      <div id="flip-card">
+        <div class="flip-card-front">
+          <header>Visite Kaartje FDND</header>
+          <section>
+            <h1>Kim Nikita Schijf</h1>
+            <img src="assets/IMG_4476.jpg">
+          </section>
+            <p>AD Frontend Design And Development</p>
+          <button id="flip-card-btn-turn-to-back">flip</button>
+        </div>
+        <div class="flip-card-back">
+          <h2>Over mij:</h2>
+          <ul id="buttons">
+            <li><a href="#">PRIVE</a></li>
+            <li><a href="#">STUDIE</a></li>
+            <li><a href="#">HOBBY'S</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <button id="flip-card-btn-turn-to-front">flip</button>
+        </div>
+      </div>
+      </div>
       
-      <header> 
-        
-        <h1>Kim Nikita Schijf</h1>
-        
-        <h2><em>AD Frontend Design And Development</em></h2>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
-      <img src="assets/IMG_4476.JPG" alt="" width="800" height="800">
-
-      <dl>
-        <dt>Journaling</dt>
-        <dd>🖊️🖊️🖊️</dd>
-        
-        <dt>Concerten</dt>
-        <dd>🪩🪩🪩</dd>
-        
-        <dt>Films</dt>
-        <dd>🎬🎬🎬</dd>
-      </dl>
-  
-      <p>Ik wil afgestudeerde FDND'er worden!<br>Hierna wil ik het schakeltraject CMD volgen.</p>
-      
-    </article>
-
-    <script src="scripts/script.js"></script>
-    
+  <script src="scripts/script.js"></script>
   </body>
+  
 </html>
+ 
+ 
