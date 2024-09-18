@@ -1,27 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* kaartje omlijning */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  overflow: hidden;
+  font-family: "SUSE", sans-serif;
+  font-style: normal;
+  text-align: center;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 300;
-    background: #fffff1;
-    overflow: hidden;
-    font-family: "SUSE", sans-serif;
-    font-style: normal;
-    text-align: center;
-}
-
+/* formaat kaartje */
 .flip-card-3D-wrapper {
   width: 60%;
   height: 80%;
@@ -35,6 +31,7 @@ html, body {
   margin: 0 auto;
 }
 
+/* kaartje plaatsing + flip */
 #flip-card {
   width: 100%;
   height: 100%;
@@ -51,6 +48,7 @@ html, body {
   transform-style: preserve-3d;
 }
 
+/* animatie flip */
 .do-flip {
   -o-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
@@ -58,24 +56,26 @@ html, body {
   transform: rotateY(-180deg);
 }
 
-#flip-card-btn-turn-to-back, #flip-card-btn-turn-to-front {
+/* flip button */
+#flip-card-btn-turn-to-back,
+#flip-card-btn-turn-to-front {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 40px;
   height: 40px;
-  background: #fffff1;
+  background: #B8A593;
   cursor: pointer;
   visibility: hidden;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: .7em;
   padding: 0;
-  color: grey;
-  border: 1px solid grey;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-#flip-card .flip-card-front, #flip-card .flip-card-back {
+/* voor en achterkant achter elkaar */
+#flip-card .flip-card-front,
+#flip-card .flip-card-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -84,95 +84,100 @@ html, body {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 2;
-  -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
-  -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
-  box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  -webkit-box-shadow: 5px 6px 32px 2px rgba(133, 133, 133, 0.71);
+  -moz-box-shadow: 5px 6px 32px 2px rgba(133, 133, 133, 0.71);
+  box-shadow: 5px 6px 32px 2px rgba(133, 133, 133, 0.71);
 }
 
+/* kleur voorkant kaartje */
 #flip-card .flip-card-front {
-    background: #EDEDE9;
-    border:1px solid #fffff1;
+  background: #F9F7F4;
 }
 
+/* kleur achterkant kaartje + losse apparte pagina*/
 #flip-card .flip-card-back {
-    background: #EDEDE9;
-    border: 1px solid grey;
-    -o-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+  background: #F9F7F4;
+  -o-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-#flip-card .flip-card-front p, #flip-card .flip-card-back p {
-  color: grey;
-  display: block;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-}
-
-header {
-  color:#937B62
-}
-
+/* Kim nikita schijf */
 h1 {
-  margin: 2rem 0 1rem;
-  color: #5d554b;
-  font-size: 30px;
-  font-family: "Dancing Script", cursive;
+  margin: 3rem 0 1rem;
+  color: #2F2621;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
 }
 
+/* over mij */
 h2 {
-  margin: 2rem 0 1rem;
-  color: #5d554b;
-  font-size: 25px;
-  font-family: "Dancing Script", cursive;
+  margin: 3rem 0 1rem;
+  color: #2F2621;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
 }
 
-ul {
-  float: left;
-  list-style: none;
-}
-
+/* keuzemenu layout */
 #buttons li {
-  float: left;
+  float: center;
   list-style: none;
   text-align: center;
-  background-color: #D6CCC2;
-  margin-right: 30px;
-  width: 150px;
-  line-height: 60px;
+  background-color: #B8A593;
+  line-height: 40px;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
 }
 
+/* tekst in keuzemenu */
+ul {
+  float: center;
+  list-style: none;
+}
+
+/* linkjes in keuze menu */
 #buttons li a {
   text-decoration: none;
-  color: #937B62;
-  display: block;
+  color: #EFECE5;
+  display: circle;
 }
 
+/* kleuren en layout hover van keuzemenu */
 #buttons li a:hover {
-  text-decoration: none;
-  color: #D5BDAF;
-  background-color: #E3D5CA;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+  color: #2F2621;
+}
 
-  img {
-    width: 120px;
-  }
+/* plaatje flipbutton */
+img {
+  position: relative;
+  width: 2em;
+  transition: .25s .15s;
+}
 
-  p {
-    margin: 2rem 0 1rem;
-    color: #5d554b;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-  }
+/* plaatje voorkant */
+.foto img {
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+/* tekst voorkant onder plaatje */
+p {
+  margin: 1rem 0 1rem;
+  color: #B8A593;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: light;
+  text-align: center;
+}

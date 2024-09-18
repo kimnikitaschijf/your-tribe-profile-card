@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDND Visitekaartje</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
- 
-  <body>
-    <div class="flip-card-3D-wrapper">
-      <div id="flip-card">
-        <div class="flip-card-front">
-          <header>Visite Kaartje FDND</header>
-          <section>
-            <h1>Kim Nikita Schijf</h1>
-            <img src="assets/IMG_4476.jpg">
-          </section>
-            <p>AD Frontend Design And Development</p>
-          <button id="flip-card-btn-turn-to-back">flip</button>
-        </div>
-        <div class="flip-card-back">
-          <h2>Over mij:</h2>
-          <ul id="buttons">
-            <li><a href="#">PRIVE</a></li>
-            <li><a href="#">STUDIE</a></li>
-            <li><a href="#">HOBBY'S</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-          <button id="flip-card-btn-turn-to-front">flip</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FDND Visitekaartje</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flip-card-3D-wrapper">
+    <div id="flip-card">
+      <div class="flip-card-front">
+        <section>
+          <h1>Kim Nikita Schijf</h1>
+          <figure>
+            <div class="foto">
+              <img src="assets/IMG_4476 2.JPG" alt="Kim Nikita Schijf" class="image">
+              <p>Frontend Designer And Developer</p>
+          </figure>
+        </section>
+        <button id="flip-card-btn-turn-to-back"><img src="assets/refresh.png" alt="Flip"></button>
       </div>
+
+      <div class="flip-card-back">
+        <h2>Over mij:</h2>
+        <ul id="buttons">
+          <div>
+            <li><a href="#">Privé</a></li>
+            <li><a href="#">Hobby's</a></li>
+            <li><a href="#">Studie</a></li>
+            <li><a href="#">Werk</a></li>
+          </div>
+        </ul>
+        <button id="flip-card-btn-turn-to-front"><img src="assets/refresh.png" alt="Flip"></button>
       </div>
-      
+    </div>
+  </div>
   <script src="scripts/script.js"></script>
-  </body>
-  
+</body>
+
 </html>
- 
- 
