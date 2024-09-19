@@ -129,13 +129,15 @@ h2 {
 #buttons li {
   float: center;
   list-style: none;
-  text-align: center;
   background-color: #B8A593;
-  line-height: 40px;
-  width: 70%;
+  line-height: 45px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  display:block;
+  text-align:center;
+  width:150px; /* fixed width */
+  text-decoration:none; 
 }
 
 /* tekst in keuzemenu */
@@ -169,6 +171,7 @@ img {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
+  text-align: center;
 }
 
 /* tekst voorkant onder plaatje */
@@ -177,7 +180,49 @@ p {
   color: #B8A593;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: light;
+  font-weight: lighter;
+  font-style: normal;
   text-align: center;
+}
+
+/* footer layout */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* contact */
+h3 {
+  color: #2F2621;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* tekst onder contact layout */
+.contact-info {
+  text-align: center;
+}
+
+/* tekst onder contact  */
+.contact-info p {
+  font-size: 12px;
+  color: #a89b92;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0%;
+  position: relative; 
+  top: -30px;
+}
+
+/* contact info icons */
+.contact-info img {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
 }
